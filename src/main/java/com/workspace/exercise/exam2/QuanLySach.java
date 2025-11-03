@@ -72,6 +72,7 @@ public class QuanLySach {
                 System.out.println("Lua chon khong hop le");
                 break;
         }
+        scanner.close();
     }
 
     public void hienThiTatCaTaiLieu() {

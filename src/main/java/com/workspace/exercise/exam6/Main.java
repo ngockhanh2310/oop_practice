@@ -30,10 +30,15 @@ public class Main {
                     school.display();
                     break;
                 case 3:
-                    if (school.getStudentAge()) {
-                        System.out.println("There is at least one student aged 20.");
+                    if(school.getStudents().isEmpty()) {
+                        System.out.println("No students available to check.");
                     } else {
-                        System.out.println("There are no students aged 20.");
+                        boolean hasAge20 = school.getStudentAge();
+                        if (hasAge20) {
+                            System.out.println("There is at least one student aged 20.");
+                        } else {
+                            System.out.println("There are no students aged 20.");
+                        }
                     }
                     break;
                 case 4:

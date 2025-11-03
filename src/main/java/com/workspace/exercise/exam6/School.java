@@ -43,9 +43,13 @@ public class School {
     }
 
     public boolean getStudentAge() {
-        for (Student student : students) {
-            if (student.getAge() == 20) {
-                return true;
+        if (students.isEmpty()) {
+            return false;
+        } else {
+            for (Student student : students) {
+                if (student.getAge() == 20) {
+                    return true;
+                }
             }
         }
         return false;
